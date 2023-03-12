@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Chess Players</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="overflow:hidden">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chessl.html">Chess Legend</a></li>
+      <li><a href="plays.html">Plays</a></li>
+      <li><a href="celeb.html">Celebrities</a></li>
+    </ul>
+  </nav>
+  <div class="wrapperP">
+    <div class="videowrapp">
+      <video id="video" width="740px"  height="485px" controls autoplay>
+        <source id="source" src="video/lvv.mp4" type="video/mp4" >
+      </video>
+      <div class="listwrapp">
+        <div id="video/kvk.mp4" class="thumbnail" onclick="changeSource(this);">
+          <img class="imgP" src="img/kvk.png"></img>
+          <div class="textT">
+            <p> Anatoly Karpov vs Garry Kasparov <p>
+          </div>
+        </div>
+        <div  id="video/bvd.mp4" class="thumbnail" onclick="changeSource(this);">
+          <img class="imgP" src="img/bvd.jpg"></img>
+          <div class="textT">
+            <p> Bobby Fischer vs Donald Byrne <p>
+          </div>
+        </div>
+        <div id="video/kvt.mp4" class="thumbnail" onclick="changeSource(this);">
+            <img class="imgP" src="img/kvt.jpeg"></img>
+            <div class="textT">
+              <p> Garry Kasparov vs Veselin Topalov <p>
+            </div>
+        </div>
+        <div id="video/lvv.mp4" class="thumbnail" onclick="changeSource(this);">
+          <img class="imgP" src="img/lvv.jpg"></img>
+          <div class="textT">
+            <p> Levon Aronian vs Vishy Anand <p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leftSide">
+      <div class="textWrapper">
+        <h1 id="titluMeci" class="titleP"> Levon Aronian vs Vishy Anand, 2019 </h1>
+        <p id="despreMeci" class="textP"></p>
+      </div>
+    </div>
+</div>
+<script>
+  function changeSource(url) {
+    title = [
+      "Anatoly Karpov vs Garry Kasparov, 1985",
+      "Garry Kasparov vs Veselin Topalov, 1999",
+      "Bobby Fischer vs Donald Byrne, 1956",
+      "Levon Aronian vs Vishy Anand, 2019"
+    ];
+    tex = [ "After 48 games had been played in the Karpov - Kasparov World Championship Match (1984), FIDE president Florencio Campomanes canceled the event while it was still in progress.<br><br> He stated that the match had exhausted the physical, if not the psychological resources, of not only the participants but all those connected with the match... No winner was declared,<br> so Anatoly Karpov retained the title. A new world championship match would now begin on September 3, 1985 with the initial score set at 0-0."
+    ,
+
+    "The game is known as Kasparov's Immortal Game, and Garry Kasparov himself has claimed this was the greatest game of chess he ever played.<br>This game was featured in Burgess, Nunn, and Emms excellent 'Mammoth Book of the World’s Greatest Chess Games'.  <br><br>Their introduction to the game states: You are about to witness one of the most extraordinary king-hunts in the history of chess. <br><br>The opening and early middlegame are relatively quiet:  Kasparov adopts an aggressive stance, but Topalov plays flexibly and obtains a fully acceptable position.  <br>Indeed, Kasparov is fighting not to be worse from move 14 to move 24, but as so often when a great champion’s back is against the wall, he gives his opponent plenty of chances to go horribly wrong.  <br>In a moment of inspiration, an amazing idea pops into Kasparov's mind, and he embarks upon a sacrificial sequence. <br>Topalov bravely decides to play down the main line when he had a perfectly safe alternative, but it turns out that Kasparov had been right: his pieces and pawns work in perfect harmony to hunt down the errant black king."
+    ,
+
+    "The Game of the Century is a famous chess game that was won by the 13-year-old future world champion Bobby Fischer against Donald Byrne in the Rosenwald Memorial Tournament at the Marshall Chess Club in New York City on October 17, 1956. <br><br>In Chess Review, Hans Kmoch dubbed it 'The Game of the Century' and wrote: 'The following game, a stunning masterpiece of combination play performed by a boy of 13 against a formidable opponent, matches the finest on record in the history of chess prodigies. <br><br>In this game, Fischer (playing Black) demonstrates noteworthy innovation and improvisation. Byrne (playing White), after a standard opening, makes a seemingly minor mistake on move 11, losing a tempo by moving the same piece twice. <br>Fischer pounces with brilliant sacrificial play, culminating in a queen sacrifice on move 17. <br>Byrne captures the queen, but Fischer gets far too much material for it – a rook, two bishops, and a pawn. <br>At the end, Fischer's pieces coordinate to force checkmate, while Byrne's queen sits useless on the other side of the board."
+    ,
+
+    ""
+      ];
+   var video = document.getElementById('source');
+   var titlu = document.getElementById('titluMeci');
+   var text = document.getElementById('despreMeci');
+   switch (url.id) {
+     case "video/kvk.mp4":
+       titlu.innerHTML = title[0];
+       text.innerHTML = tex[0];
+       break;
+      case "video/bvd.mp4":
+        titlu.innerHTML  = title[2];
+        text.innerHTML = tex[2];
+        break;
+      case "video/kvt.mp4":
+        titlu.innerHTML  = title[1];
+        text.innerHTML = tex[1];
+        break;
+      case "video/lvv.mp4":
+        titlu.innerHTML  = title[3];
+        text.innerHTML = tex[3];
+        break;
+      default:
+
+   }
+   video.src = url.id;
+   document.getElementById("video").load();
+  }
+</script>
+</body>
+</html>

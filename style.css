@@ -1,0 +1,349 @@
+/* ---------- fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* ---------- navbar ---------- */
+body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+
+ul {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  list-style-type: none;
+  z-index: 999;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  position: relative;
+  top: 40px;
+  padding: 10px 50px;
+  display: inline;
+  text-decoration: none;
+  color: #061133;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+li a:hover {
+  transition: .2s;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #FAFF10;
+  border-bottom-width: 2px;
+}
+
+li a:active {
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #FAFF10;
+  border-bottom-width: thin;
+}
+
+/* ---------- scrollbar ---------- */
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffff00;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffff00;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ffff00;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ---------- home page ---------- */
+
+.wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 49%;
+  right: 0;
+  top: 0;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#chess {
+  display: inline;
+  padding: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 112px;
+  text-align: center;
+  font-size: 96px;
+  color: #061133;
+}
+
+#players {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 112px;
+  text-align: center;
+  font-size: 64px;
+  color: white;
+}
+
+.bg_img {
+  width: 100%;
+}
+
+#citat {
+  position: absolute;
+  right: 50%;
+  top: 60%;
+  margin: 0;
+  text-align: right;
+  padding-right: 20px;
+  border-right: 4px solid #FAFF10;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* ---------- celebrities page ---------- */
+
+.wrapperC {
+  position: static;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  display: flex;
+
+}
+
+.wrapperRight {
+  position: relative;
+  right: 0;
+  width: 40%;
+  height: 100%;
+}
+
+.wrapperLeft {
+  position: relative  ;
+  width: 60%;
+  height: 100%;
+}
+
+.personaj {
+  position: relative;
+  width: 400px;
+  left: 100px;
+  margin-top: 30%;
+}
+
+.titleC {
+  position: relative;
+  top: 30%;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.textC {
+  position: absolute;
+  top: 40%;
+  right: 50px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 15px;
+  text-align: left;
+}
+
+/* ---------- plays page ---------- */
+
+.wrapperP {
+  position: static;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  display: flex;
+}
+
+.videowrapp {
+  position: static;
+  width: 60%;
+  height: 100%;
+}
+
+.listwrapp {
+  position: relative;
+  display: flex;
+  top: 25%;
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  height: 130px;
+  padding: 20px;
+
+}
+
+.thumbnail img {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  display: inline;
+  object-fit: cover;
+}
+
+.textT {
+    position: relative;
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #061133;
+}
+
+video {
+  position: relative;
+  top: 18vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thin {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  color: #061133;
+}
+
+.leftSide {
+  position: static;
+  width: 40%;
+  height: 100%;
+}
+
+.titleP {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: left;
+}
+
+.textWrapper {
+  position: relative;
+  top: 20%;
+  left: 20px;
+  width: 70%;
+}
+
+.textP {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: left;
+}
+
+/* ---------- plays page ---------- */
+
+
+.wrapperLeftLegends {
+  position: relative;
+  width: 70%;
+  height: 100%;
+
+}
+
+.wrapperRightLegends {
+  position: relative;
+  width: 20%;
+  height: 100vh;
+  top: -8%;
+}
+
+.chessLegends {
+  position: relative;
+  width: auto;
+  height: 50%;
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 112px;
+  /* identical to box height */
+  text-align: left;
+  color: rgba(45, 45, 45, 0.77);
+  transform: rotate(90deg);
+}
+
+.chessLegend2 {
+  position: relative;
+  top: -25%;
+  width: auto;
+  left: 11%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 112px;
+  /* identical to box height */
+  text-align: left;
+  color: #FFE791;
+  transform: rotate(90deg);
+}
